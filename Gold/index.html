@@ -15,8 +15,10 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="css/style.css" />
-	
+	<link rel="stylesheet" href="themes/RemindMe1.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -24,15 +26,16 @@
 </head>
 <body>
 
-	<div data-role="page" data-position="fixed" id="home" data-theme="b">
-		<div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page" data-position="fixed" id="home" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<img src="img/TAS.png" style="max-width: 30%"class="ui-btn-left" />
 			<h1>RemindMe</h1>
 		</div>
 		<div data-role="content">
 			<input type="search" name="reminderSearch" id="reminderSearch" />
 		</div>
 		
-		<div data-role="content" style="text-align: center;" data-theme="b">
+		<div data-role="content" style="text-align: center;" data-theme="a">
 			<a href="#reminder">Remember what to do, and when it's due!<br /><img src="img/reminder.png" height=120 width=120/></a>
 			
 			<p><a href="#reminder" style="margin: 5%" data-inset="true" data-role="button" data-icon="arrow-r" data-iconpos="right">Add A Reminder</a><br />
@@ -49,7 +52,7 @@
 		</div>
 	</div>
 		
-		<div data-role="footer" data-position="fixed" data-theme="b" id="footer">
+		<div data-role="footer" data-position="fixed" data-theme="a" id="footer">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -62,10 +65,11 @@
 			</div>
 	</div>
 	
-	<div data-role="page" data-add-back-btn="true" data-position="fixed" id="reminder" data-theme="b">
-		<div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page"  data-position="fixed" id="reminder" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a">
 		<a href="#home" data-icon="home" class="ui-btn-right" data-ajax="true">Home</a>
 			<h1>RemindMe</h1>
+			<img src="img/TAS.png" style="max-width: 30%"class="ui-btn-left" />
 		</div>
 		
 		<div data-role="content">
@@ -146,7 +150,7 @@
         
         </div>
 		
-		<div data-role="footer" data-position="fixed" data-theme="b" id="footer">
+		<div data-role="footer" data-position="fixed" data-theme="a" id="footer">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -159,8 +163,9 @@
 			</div>
 	</div>
 	
-		<div data-role="page" id="search" data-theme="b" data-add-back-btn="true">
-			<div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+		<div data-role="page" id="search" data-theme="a" >
+			<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+				<img src="img/TAS.png" style="max-width: 30%"class="ui-btn-left" />
 				<h1>RemindMe</h1>
 				<a href="#home" data-icon="home" class="ui-btn-right" data-ajax="true">Home</a>
 			</div>
@@ -171,7 +176,7 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role="footer" data-position="fixed" data-theme="b" id="footer">
+			<div data-role="footer" data-position="fixed" data-theme="a" id="footer">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -184,8 +189,9 @@
 			</div>
 		</div>
 		
-		<div data-role="page" id="browse" data-theme="b" data-add-back-btn="true">
-			<div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+		<div data-role="page" id="browse" data-theme="a" >
+			<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+				<img src="img/TAS.png" style="max-width: 30%"class="ui-btn-left" />
 				<h1>RemindMe</h1>
 				<a href="#home" id="sendHome" data-icon="home" class="ui-btn-right" data-ajax="true">Home</a>
 			</div>
@@ -194,7 +200,7 @@
 					<!-- JavaScript will insert data here -->
 				</ul>
 			</div>
-			<div data-role="footer" data-position="fixed" data-theme="b" id="footer">
+			<div data-role="footer" data-position="fixed" data-theme="a" id="footer">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -206,8 +212,9 @@
 				</div>
 			</div>
 		</div>
-			<div data-role="page" id="moreInfo" data-theme="b" data-add-back-btn="true">
-			<div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+			<div data-role="page" id="moreInfo" data-theme="a" >
+			<div data-role="header" data-position="fixed" data-theme="a" data-id="header">
+				<img src="img/TAS.png" style="max-width: 30%"class="ui-btn-left" />
 				<h1>RemindMe</h1>
 				<a href="#home" id="sendHome" data-icon="home" class="ui-btn-right" data-ajax="true">Home</a>
 			</div>
@@ -218,7 +225,7 @@
 					<a href="http://github.com/B64265/MiU_Project2" data-role="button" id="GitHub" data-icon="arrow-r" data-iconpos="right">GitHub</a>
 				</ul>
 			</div>
-			<div data-role="footer" data-position="fixed" data-theme="b" id="footer">
+			<div data-role="footer" data-position="fixed" data-theme="a" id="footer">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -231,7 +238,7 @@
 			</div>
 		</div>
 		
-		<div data-role="dialog" data-position="fixed" id="reminderErrors" data-theme="b">
+		<div data-role="dialog" data-position="fixed" id="reminderErrors" data-theme="a">
 		<div data-role="header" data-position="fixed">
 				<h1>Missing Fields</h1>
 			</div>
@@ -247,9 +254,6 @@
 	
 
 	<!-- JavaScript under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	<script src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/json.js" type="text/javascript"></script>
